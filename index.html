@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASHOPPING</title>
+    <link href="./css/components-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/nanoscroller.css">
+    <link rel="stylesheet" href="./css/nanomain.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="shortcut icon" href="./">
+
+</head>
+
+<body>
+    <a href="#" id="toTopBtn">
+        <img src="./icon/arrowup.svg" alt="">
+    </a>
+    <a href="#" id="toDisplayBtn">
+        <img src="./icon/display.svg" alt="">
+    </a>
+    <div class="container-lg" id="container">
+        <div class="header_section_1">
+            <div class="row justify-content-between px-1 pt-2">
+                <div class="col-lg col-md-12">
+                    <div class="list_icon" alt="">
+                        <a href="#"><img src="./icon/facebook.svg" alt=""></a>
+                        <a href="#"><img src="./icon/instagram.svg" alt=""></a>
+                        <a href="#"><img src="./icon/google-plus.svg" alt=""></a>
+                        <a href="#"><img src="./icon/youtube.svg" alt=""></a>
+                        <a href="#"><img src="./icon/discord.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg col-md col-sm-12">
+                    <div class="menu_search">
+                        <input type="text" name="" value="" placeholder="Search">
+                        <button type="button"><img src="./icon/search.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="col-lg col-md col-sm-8">
+                    <div class="login_menu d-sm-flex">
+                        <a href="#"><img src="./icon/bell.svg" alt=""></a>
+                        <a href="./dangnhap.html" class="buttonLogin">Đăng nhập</a>
+                        <a href="./post/post1.html" class="buttonLogin">Đăng tin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_section_2 mt-3 p-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo_menu w-80 ms-4">
+                        <a href="#"><img src="./img/Home/logo_menu.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-8 d-lg-block mt-lg-0 d-md-flex justify-content-sm-end mt-md-2 d-sm-flex justify-content-sm-end mt-sm-2 iconmenu">
+                    <div class="menu mt-3 d-md-none d-lg-block d-sm-none">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdowncontainer1">
+                                <a class="nav-link" href="#">Mua bán</a>
+                                <img src="./icon/dowarrow.svg" alt="">
+                                <ul class="nav dropdown1">
+                                    <li class="nav-item dropitem1 dropdowncontainer2">
+                                        <a class="nav-item dropa1" href="#">Cần mua</a>
+                                        <img src="./icon/subicon.svg" alt="">
+                                        <ul class="nav dropdown2">
+                                            <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">LMHT</a>
+                                            </li>
+                                            <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Gensin
+                                                    Impact</a>
+                                            </li>
+                                            <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Liên
+                                                    Quân</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropitem1 dropdowncontainer2">
+                                        <a class="nav-item dropa1" href="#">Cần bán</a>
+                                        <img src="./icon/subicon.svg" alt="">
+                                        <ul class="nav dropdown2">
+                                            <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">LMHT</a>
+                                            </li>
+                                            <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Gensin
+                                                    Impact</a>
+                                            </li>
+                                            <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Liên
+                                                    Quân</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Chat</a>
+                            </li>
+                            <li class="nav-item dropdowncontainer1">
+                                <a class="nav-link" href="#">Hỗ trợ</a>
+                                <img src="./icon/dowarrow.svg" alt="">
+                                <ul class="nav dropdown1">
+                                    <li class="nav-item dropitem1">
+                                        <a class="nav-item dropa1" href="#">Báo cáo</a>
+                                    </li>
+                                    <li class="nav-item dropitem1">
+                                        <a class="nav-item dropa1" href="#">Hướng dẫn</a>
+                                    </li>
+                                    <li class="nav-item dropitem1">
+                                        <a class="nav-item dropa1" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nạp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuicon d-lg-none"><img onclick="openMenu()" src="./icon/menu.svg" alt=""></div>
+                </div>
+                <div id="menu" class="col-12 d-lg-none menusm">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdowncontainer1">
+                            <a class="nav-link" href="#">Mua bán</a>
+                            <img src="./icon/dowarrow.svg" alt="">
+                            <ul class="nav dropdown1">
+                                <li class="nav-item dropitem1 dropdowncontainer2">
+                                    <a class="nav-item dropa1" href="#">Cần mua</a>
+                                    <img src="./icon/subicon.svg" alt="">
+                                    <ul class="nav dropdown2">
+                                        <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">LMHT</a>
+                                        </li>
+                                        <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Gensin
+                                                Impact</a>
+                                        </li>
+                                        <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Liên
+                                                Quân</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropitem1 dropdowncontainer2">
+                                    <a class="nav-item dropa1" href="#">Cần bán</a>
+                                    <img src="./icon/subicon.svg" alt="">
+                                    <ul class="nav dropdown2">
+                                        <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">LMHT</a>
+                                        </li>
+                                        <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Gensin
+                                                Impact</a>
+                                        </li>
+                                        <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Liên
+                                                Quân</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chat</a>
+                        </li>
+                        <li class="nav-item dropdowncontainer1">
+                            <a class="nav-link" href="#">Hỗ trợ</a>
+                            <img src="./icon/dowarrow.svg" alt="">
+                            <ul class="nav dropdown1">
+                                <li class="nav-item dropitem1">
+                                    <a class="nav-item dropa1" href="#">Báo cáo</a>
+                                </li>
+                                <li class="nav-item dropitem1">
+                                    <a class="nav-item dropa1" href="#">Hướng dẫn</a>
+                                </li>
+                                <li class="nav-item dropitem1">
+                                    <a class="nav-item dropa1" href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nạp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="header_section_3">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="./img/Home/banner1.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./img/Home/banner2.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item " data-bs-interval="5000">
+                                <img src="./img/Home/banner3.svg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="color: red;height: 2px;">
+        <div class="content_section_1">
+            <div class="row">
+                <div class="col text-center text-white ">
+                    <h1>Danh mục</h1>
+                </div>
+            </div>
+            <div class="row row-cols-sm-1">
+                <div class="col-lg-4 col-md-4">
+                    <div class="categories">
+                        <a href="./categories.html"><img src="./img/Home/lollogo.png" alt="">
+                            <h1>LIÊN MINH HUYỀN THOẠI</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="categories">
+                        <a href="./categories1.html"><img src="./img/Home/genshinlogo1.png" alt="">
+                            <h1>GENSHIN IMPACT</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="categories">
+                        <a href="./categories2.html"><img src="./img/Home/aovlogo1.png" alt="">
+                            <h1>LIÊN QUÂN MOBILE</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Content_section_2 mt-5">
+            <div class="row p-2">
+                <div class="col-lg-6 col-md-6 pe-0 col-sm-12">
+                    <div id="nanomain">
+                        <div class="nano">
+                            <div class="nano-content">
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="special_news">
+                                    <div class="special_img"><img src="./img/Home/VIP LOL.png" alt=""></div>
+                                    <div class="special_content">
+                                        <div class="special_content_title">ACC LOL VIP 4/2021</div>
+                                        <div class="special_content_text">Cập nhật lô acc lol vip tháng 4</div>
+                                        <div class="special_content_nad">
+                                            <div class="special_content_name">admin</div>
+                                            <div class="special_content_date">1/1/2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 ps-0 d-flex justify-content-center col-sm-12">
+                    <div class="special_news2">
+                        <div class="special_news2_img"><img src="./img/Home/lolnewsvip.png" alt=""></div>
+                        <div class="special_news2_content">
+                            <div class="special_news2_content_title">ACC LOL VIP 4/2021</div>
+                            <div class="special_news2_content_text">Cập nhật lô acc vip tháng 4</div>
+                            <div class="special_news2_content_nad">
+                                <div class="special_news2_content_nad_name">admin</div>
+                                <div class="special_news2_content_nad_date">1/1/2021</div>
+                            </div>
+                        </div>
+                        <div class="special_news2_more"><a href="#">Xem thêm</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="content_section_3 mt-3">
+            <div class="h1 m-0 text-center text-white">Tin mới</div>
+            <div class="row row-cols-lg-3 p-lg-3 row-cols-md-2 p-md-1 row-cols-sm-1 productrow">
+                <div class="col">
+                    <div class="news_product">
+                        <div class="news_product_img">
+                            <div class="news_product_overplay">
+                                <div class="news_product_name">quangteo12</div>
+                                <div class="news_product_type">Cần bán</div>
+                            </div>
+                            <img src="./img/lolcategories/infor.jpeg" alt="">
+                        </div>
+                        <div class="news_product_content">
+                            <div class="news_product_wrap_row">
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">SV:</div>
+                                        <div class="news_product_col_content">VN</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Tướng:</div>
+                                        <div class="news_product_col_content">75</div>
+                                    </div>
+                                </div>
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Rank:</div>
+                                        <div class="news_product_col_content">Chưa có</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Skin:</div>
+                                        <div class="news_product_col_content">82</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_product_price_container">
+                            <div class="news_product_price">130.000đ</div>
+                            <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="news_product">
+                        <div class="news_product_img">
+                            <div class="news_product_overplay">
+                                <div class="news_product_name">quangteo12</div>
+                                <div class="news_product_type">Cần bán</div>
+                            </div>
+                            <img src="./img/lolcategories/infor.jpeg" alt="">
+                        </div>
+                        <div class="news_product_content">
+                            <div class="news_product_wrap_row">
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">SV:</div>
+                                        <div class="news_product_col_content">VN</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Tướng:</div>
+                                        <div class="news_product_col_content">75</div>
+                                    </div>
+                                </div>
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Rank:</div>
+                                        <div class="news_product_col_content">Chưa có</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Skin:</div>
+                                        <div class="news_product_col_content">82</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_product_price_container">
+                            <div class="news_product_price">130.000đ</div>
+                            <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="news_product">
+                        <div class="news_product_img">
+                            <div class="news_product_overplay">
+                                <div class="news_product_name">quangteo12</div>
+                                <div class="news_product_type">Cần bán</div>
+                            </div>
+                            <img src="./img/lolcategories/infor.jpeg" alt="">
+                        </div>
+                        <div class="news_product_content">
+                            <div class="news_product_wrap_row">
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">SV:</div>
+                                        <div class="news_product_col_content">VN</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Tướng:</div>
+                                        <div class="news_product_col_content">75</div>
+                                    </div>
+                                </div>
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Rank:</div>
+                                        <div class="news_product_col_content">Chưa có</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Skin:</div>
+                                        <div class="news_product_col_content">82</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_product_price_container">
+                            <div class="news_product_price">130.000đ</div>
+                            <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="news_product">
+                        <div class="news_product_img">
+                            <div class="news_product_overplay">
+                                <div class="news_product_name">quangteo12</div>
+                                <div class="news_product_type">Cần bán</div>
+                            </div>
+                            <img src="./img/lolcategories/infor.jpeg" alt="">
+                        </div>
+                        <div class="news_product_content">
+                            <div class="news_product_wrap_row">
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">SV:</div>
+                                        <div class="news_product_col_content">VN</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Tướng:</div>
+                                        <div class="news_product_col_content">75</div>
+                                    </div>
+                                </div>
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Rank:</div>
+                                        <div class="news_product_col_content">Chưa có</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Skin:</div>
+                                        <div class="news_product_col_content">82</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_product_price_container">
+                            <div class="news_product_price">130.000đ</div>
+                            <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="news_product">
+                        <div class="news_product_img">
+                            <div class="news_product_overplay">
+                                <div class="news_product_name">quangteo12</div>
+                                <div class="news_product_type">Cần bán</div>
+                            </div>
+                            <img src="./img/lolcategories/infor.jpeg" alt="">
+                        </div>
+                        <div class="news_product_content">
+                            <div class="news_product_wrap_row">
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">SV:</div>
+                                        <div class="news_product_col_content">VN</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Tướng:</div>
+                                        <div class="news_product_col_content">75</div>
+                                    </div>
+                                </div>
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Rank:</div>
+                                        <div class="news_product_col_content">Chưa có</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Skin:</div>
+                                        <div class="news_product_col_content">82</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_product_price_container">
+                            <div class="news_product_price">130.000đ</div>
+                            <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="news_product">
+                        <div class="news_product_img">
+                            <div class="news_product_overplay">
+                                <div class="news_product_name">quangteo12</div>
+                                <div class="news_product_type">Cần bán</div>
+                            </div>
+                            <img src="./img/lolcategories/infor.jpeg" alt="">
+                        </div>
+                        <div class="news_product_content">
+                            <div class="news_product_wrap_row">
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">SV:</div>
+                                        <div class="news_product_col_content">VN</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Tướng:</div>
+                                        <div class="news_product_col_content">75</div>
+                                    </div>
+                                </div>
+                                <div class="news_product_row">
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Rank:</div>
+                                        <div class="news_product_col_content">Chưa có</div>
+                                    </div>
+                                    <div class="news_product_col">
+                                        <div class="news_product_col_title">Skin:</div>
+                                        <div class="news_product_col_content">82</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_product_price_container">
+                            <div class="news_product_price">130.000đ</div>
+                            <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="content_section_4 mt-3">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 p-0">
+                    <div class="music_iframe">
+                        <iframe width="1182" height="665" src="https://www.youtube.com/embed/-3p6bNRo-0M?list=PLRBTsDAtvn45ZoVkvckvmYzlWpDaj8Kn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-end align-content-center p-0">
+                    <div class="h2 text-center text-white mb-4">Quảng cáo</div>
+                    <div class="advertise"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content_section_5 mt-3 mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="contact d-lg-flex flex-lg-row d-md-flex flex-md-row d-sm-flex flex-sm-column contactxm">
+                        <div class="contact_col1">
+                            <div class="contact_title">
+                                <img src="./img/Home/logo_menu.png" alt="">
+                            </div>
+                            <div class="contact_content">
+                                <p>Ashopping là chuyên trang tổng hợp và mua bán về các lĩnh vực Game . Ashopping sẽ đem lại sự đảm bảo cho khách hàng sự tin cậy và uy tín chất lượng bên chúng tôi .
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact_col2">
+                            <div class="contact_title">THEO DÕI CHÚNG TÔI TRÊN</div>
+                            <div class="contact_content">
+                                <a href="#"><img src="./icon/facebook.svg" alt="">&nbsp;Facebook</a>
+                                <a href="#"><img src="./icon/instagram.svg" alt="">&nbsp;Instagram</a>
+                                <a href="#"><img src="./icon/google-plus.svg" alt="">&nbsp;Google</a>
+                            </div>
+                        </div>
+                        <div class="contact_col3">
+                            <div class="contact_title">CHĂM SÓC KHÁCH HÀNG</div>
+                            <div class="contact_content">
+                                <a href="#">Hướng dẫn mua hàng</a>
+                                <a href="#">Hướng dẫn bán hàng</a>
+                                <a href="#">Thanh toán</a>
+                                <a href="#">Liên hệ hỗ trợ</a>
+                                <a href="#">Quy định cần biết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Copyright © 2021 Admicro, ASHOPPING Corporation. All rights reserved.
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/btnup.js"></script>
+    <script src="./js/changeBg.js"></script>
+    <script src="./js/iconmenu.js"></script>
+    <script type="text/javascript" src="./js/overthrow.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.nanoscroller.js"></script>
+    <script type="text/javascript" src="./js/nanomain.js"></script>
+</body>
+
+</html>

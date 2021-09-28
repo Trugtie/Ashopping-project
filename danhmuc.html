@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASHOPPING</title>
+    <link href="./css/components-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/nanoscroller.css">
+    <link rel="stylesheet" href="./css/nanomain.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="shortcut icon" href="./">
+
+</head>
+
+<body>
+    <a href="#" id="toTopBtn">
+        <img src="./icon/arrowup.svg" alt="">
+    </a>
+    <a href="#" id="toDisplayBtn">
+        <img src="./icon/display.svg" alt="">
+    </a>
+    <div class="container" id="container">
+        <div class="header">
+            <div class="header_section_1">
+                <div class="row justify-content-between px-1 pt-2 ">
+                    <div class="col">
+                        <div class="list_icon" alt="">
+                            <a href="#"><img src="./icon/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icon/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icon/google-plus.svg" alt=""></a>
+                            <a href="#"><img src="./icon/youtube.svg" alt=""></a>
+                            <a href="#"><img src="./icon/discord.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="menu_search">
+                            <input type="text" name="" value="" placeholder="Search">
+                            <button type="button"><img src="./icon/search.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="login_menu">
+                            <a href="#"><img src="./icon/bell.svg" alt=""></a>
+                            <a href="#" class="buttonLogin">Đăng nhập</a>
+                            <a href="#" class="buttonLogin">Đăng ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_section_2 mt-3 p-3">
+                <div class="row">
+                    <div class="col-4 ">
+                        <div class="logo_menu w-80 ms-4">
+                            <a href="#"><img src="./img/Home/logo_menu.png" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="menu mt-3">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdowncontainer1">
+                                    <a class="nav-link" href="#">Mua bán</a>
+                                    <img src="./icon/dowarrow.svg" alt="">
+                                    <ul class="nav dropdown1">
+                                        <li class="nav-item dropitem1 dropdowncontainer2">
+                                            <a class="nav-item dropa1" href="#">Cần mua</a>
+                                            <img src="./icon/subicon.svg" alt="">
+                                            <ul class="nav dropdown2">
+                                                <li class="nav-item dropitem2"><a class="nav-item dropa2"
+                                                        href="#">LMHT</a></li>
+                                                <li class="nav-item dropitem2"><a class="nav-item dropa2"
+                                                        href="#">Gensin Impact</a>
+                                                </li>
+                                                <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Liên
+                                                        Quân</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropitem1 dropdowncontainer2">
+                                            <a class="nav-item dropa1" href="#">Cần bán</a>
+                                            <img src="./icon/subicon.svg" alt="">
+                                            <ul class="nav dropdown2">
+                                                <li class="nav-item dropitem2"><a class="nav-item dropa2"
+                                                        href="#">LMHT</a></li>
+                                                <li class="nav-item dropitem2"><a class="nav-item dropa2"
+                                                        href="#">Gensin Impact</a>
+                                                </li>
+                                                <li class="nav-item dropitem2"><a class="nav-item dropa2" href="#">Liên
+                                                        Quân</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Chat</a>
+                                </li>
+                                <li class="nav-item dropdowncontainer1">
+                                    <a class="nav-link" href="#">Hỗ trợ</a>
+                                    <img src="./icon/dowarrow.svg" alt="">
+                                    <ul class="nav dropdown1">
+                                        <li class="nav-item dropitem1">
+                                            <a class="nav-item dropa1" href="#">Báo cáo</a>
+                                        </li>
+                                        <li class="nav-item dropitem1">
+                                            <a class="nav-item dropa1" href="#">Hướng dẫn</a>
+                                        </li>
+                                        <li class="nav-item dropitem1">
+                                            <a class="nav-item dropa1" href="#">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nạp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                <h5>Liên Minh Huyền Thoại</h5>
+            </div>
+            <div class="header_section_2 mt-3 p-3">
+                
+                    <div class="row row-cols-3 p-3">
+                        <div class="col">
+
+                            <div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" style="margin-right: 22px;" href="#">Mức Giá</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item dropdown">
+                                        <select name="ChonGia" id="">
+                                            <option value="0">Chọn Giá</option>
+                                            <option value="1">100.000 VND</option>
+                                            <option value="2">300.000 VND</option>
+                                            <option value="3">200.000 VND</option>
+                                        </select>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                            </div>
+                            <div> <div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" style="margin-right: 51px;" href="#">Rank </a> 
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item dropdown">
+                                        <select name="ChonGia" id="">
+                                            <option value="0">Chọn Mức Rank</option>
+                                            <option value="1">Đồng</option>
+                                            <option value="2">Bac</option>
+                                            <option value="3">Vàng</option>
+                                            <option value="4">Bạch Kim</option>
+                                            <option value="5">Kim Cương</option>
+                                            <option value="6">Tinh Anh</option>
+                                        </select>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav></div>
+                            </div>
+
+
+                            <div class="news_product">
+                                <div class="news_product_img">
+                                    <div class="news_product_overplay">
+                                        <div class="news_product_name">quangteo12</div>
+                                        <div class="news_product_type">Cần bán</div>
+                                    </div>
+                                    <img src="./img/Home/lolproduct.PNG" alt="">
+                                </div>
+                                <div class="news_product_content">
+                                    <div class="news_product_wrap_row">
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">SV:</div>
+                                                <div class="news_product_col_content">VN</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Tướng:</div>
+                                                <div class="news_product_col_content">75</div>
+                                            </div>
+                                        </div>
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Rank:</div>
+                                                <div class="news_product_col_content">Chưa có</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Skin:</div>
+                                                <div class="news_product_col_content">82</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_product_price_container">
+                                    <div class="news_product_price">130.000đ</div>
+                                    <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+
+
+                            <div><div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#">Trang Phục</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item dropdown">
+                                        <select name="ChonGia" id="">
+                                            <option value="0">Chọn Giá</option>
+                                            <option value="1">100.000 VND</option>
+                                            <option value="2">300.000 VND</option>
+                                            <option value="3">200.000 VND</option>
+                                        </select>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav></div></div>
+                            <div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" style="margin-right: 35px;" href="#">Máy Chủ</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item dropdown">
+                                        <select name="ChonGia" id="">
+                                            <option value="0">Chọn Máy Chủ</option>
+                                            <option value="1">100.000 VND</option>
+                                            <option value="2">300.000 VND</option>
+                                            <option value="3">200.000 VND</option>
+                                        </select>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav></div>
+                            <div class="news_product">
+                                <div class="news_product_img">
+                                    <div class="news_product_overplay">
+                                        <div class="news_product_name">quangteo12</div>
+                                        <div class="news_product_type">Cần bán</div>
+                                    </div>
+                                    <img src="./img/Home/lolproduct.PNG" alt="">
+                                </div>
+                                <div class="news_product_content">
+                                    <div class="news_product_wrap_row">
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">SV:</div>
+                                                <div class="news_product_col_content">VN</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Tướng:</div>
+                                                <div class="news_product_col_content">75</div>
+                                            </div>
+                                        </div>
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Rank:</div>
+                                                <div class="news_product_col_content">Chưa có</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Skin:</div>
+                                                <div class="news_product_col_content">82</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_product_price_container">
+                                    <div class="news_product_price">130.000đ</div>
+                                    <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div><div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" style="margin-right: 50px;" href="#">Tướng</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item dropdown">
+                                        <select name="ChonGia" id="">
+                                            <option value="0">Chọn Tướng</option>
+                                            <option value="1">100.000 VND</option>
+                                            <option value="2">300.000 VND</option>
+                                            <option value="3">200.000 VND</option>
+                                        </select>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav></div></div>
+                            <div><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <button type="button" class="btn btn-secondary" style="padding: 7px 40px ">Tìm</button>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  
+                                </div>
+                                <div class="container-fluid" >
+                                    <button type="button" class="btn btn-secondary" style="margin-left: -50px;">Xem Tất Cả</button>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    
+                                  </div>
+                              </nav>
+                            </div>
+                            <div class="news_product">
+                                <div class="news_product_img">
+                                    <div class="news_product_overplay">
+                                        <div class="news_product_name">quangteo12</div>
+                                        <div class="news_product_type">Cần bán</div>
+                                    </div>
+                                    <img src="./img/Home/lolproduct.PNG" alt="">
+                                </div>
+                                <div class="news_product_content">
+                                    <div class="news_product_wrap_row">
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">SV:</div>
+                                                <div class="news_product_col_content">VN</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Tướng:</div>
+                                                <div class="news_product_col_content">75</div>
+                                            </div>
+                                        </div>
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Rank:</div>
+                                                <div class="news_product_col_content">Chưa có</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Skin:</div>
+                                                <div class="news_product_col_content">82</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_product_price_container">
+                                    <div class="news_product_price">130.000đ</div>
+                                    <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="news_product">
+                                <div class="news_product_img">
+                                    <div class="news_product_overplay">
+                                        <div class="news_product_name">quangteo12</div>
+                                        <div class="news_product_type">Cần bán</div>
+                                    </div>
+                                    <img src="./img/Home/lolproduct.PNG" alt="">
+                                </div>
+                                <div class="news_product_content">
+                                    <div class="news_product_wrap_row">
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">SV:</div>
+                                                <div class="news_product_col_content">VN</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Tướng:</div>
+                                                <div class="news_product_col_content">75</div>
+                                            </div>
+                                        </div>
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Rank:</div>
+                                                <div class="news_product_col_content">Chưa có</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Skin:</div>
+                                                <div class="news_product_col_content">82</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_product_price_container">
+                                    <div class="news_product_price">130.000đ</div>
+                                    <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="news_product">
+                                <div class="news_product_img">
+                                    <div class="news_product_overplay">
+                                        <div class="news_product_name">quangteo12</div>
+                                        <div class="news_product_type">Cần bán</div>
+                                    </div>
+                                    <img src="./img/Home/lolproduct.PNG" alt="">
+                                </div>
+                                <div class="news_product_content">
+                                    <div class="news_product_wrap_row">
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">SV:</div>
+                                                <div class="news_product_col_content">VN</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Tướng:</div>
+                                                <div class="news_product_col_content">75</div>
+                                            </div>
+                                        </div>
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Rank:</div>
+                                                <div class="news_product_col_content">Chưa có</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Skin:</div>
+                                                <div class="news_product_col_content">82</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_product_price_container">
+                                    <div class="news_product_price">130.000đ</div>
+                                    <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="news_product">
+                                <div class="news_product_img">
+                                    <div class="news_product_overplay">
+                                        <div class="news_product_name">quangteo12</div>
+                                        <div class="news_product_type">Cần bán</div>
+                                    </div>
+                                    <img src="./img/Home/lolproduct.PNG" alt="">
+                                </div>
+                                <div class="news_product_content">
+                                    <div class="news_product_wrap_row">
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">SV:</div>
+                                                <div class="news_product_col_content">VN</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Tướng:</div>
+                                                <div class="news_product_col_content">75</div>
+                                            </div>
+                                        </div>
+                                        <div class="news_product_row">
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Rank:</div>
+                                                <div class="news_product_col_content">Chưa có</div>
+                                            </div>
+                                            <div class="news_product_col">
+                                                <div class="news_product_col_title">Skin:</div>
+                                                <div class="news_product_col_content">82</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_product_price_container">
+                                    <div class="news_product_price">130.000đ</div>
+                                    <div class="news_product_more"><a href="#">Chi tiết</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                
+                 </div>
+            
+            
+            
+            
+            
+                
+            
+            <div class="content_section_5 mt-3 mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="contact d-lg-flex flex-lg-row d-md-flex flex-md-row d-sm-flex flex-sm-column contactxm">
+                        <div class="contact_col1">
+                            <div class="contact_title">
+                                <img src="./img/Home/logo_menu.png" alt="">
+                            </div>
+                            <div class="contact_content">
+                                <p>Ashopping là chuyên trang tổng hợp và mua bán về các lĩnh vực Game . Ashopping sẽ đem lại sự đảm bảo cho khách hàng sự tin cậy và uy tín chất lượng bên chúng tôi .
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact_col2">
+                            <div class="contact_title">THEO DÕI CHÚNG TÔI TRÊN</div>
+                            <div class="contact_content">
+                                <a href="#"><img src="./icon/facebook.svg" alt="">&nbsp;Facebook</a>
+                                <a href="#"><img src="./icon/instagram.svg" alt="">&nbsp;Instagram</a>
+                                <a href="#"><img src="./icon/google-plus.svg" alt="">&nbsp;Google</a>
+                            </div>
+                        </div>
+                        <div class="contact_col3">
+                            <div class="contact_title">CHĂM SÓC KHÁCH HÀNG</div>
+                            <div class="contact_content">
+                                <a href="#">Hướng dẫn mua hàng</a>
+                                <a href="#">Hướng dẫn bán hàng</a>
+                                <a href="#">Thanh toán</a>
+                                <a href="#">Liên hệ hỗ trợ</a>
+                                <a href="#">Quy định cần biết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Copyright © 2021 Admicro, ASHOPPING Corporation. All rights reserved.
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/btnup.js"></script>
+    <script src="./js/changeBg.js"></script>
+    <script type="text/javascript" src="./js/overthrow.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.nanoscroller.js"></script>
+    <script type="text/javascript" src="./js/nanomain.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.container-lg{
+    background-color: #171e22 ;
+    margin-top: 30px;
+}
+
+.header_section_2{
+    background-color: #293139;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.Content_section_2{
+    background-color: #293139;
+}
+
+.content_section_3{
+    background-color: #293139;
+}
+
+body{
+    background-image: url(../img/body/bg1.jpg);
+    width: 100%;
+    size: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    transition: all 3s;
+}
